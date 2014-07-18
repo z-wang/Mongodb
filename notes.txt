@@ -65,6 +65,10 @@ db.account.drop()
 
 #use help all the time!
 
+$ ./mongo
+use admin
+db.shutdownServer()
+
 ********************************
 
 #mongodb's data tools
