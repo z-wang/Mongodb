@@ -239,3 +239,24 @@ db.account.ensureIndex({"userName":1})
 
 
 
+
+
+
+
+
+
+###########################################################################
+additional:
+1. and / or in find()
+$and, $or
+
+2. find _id need to use ObjectId("") because system _id itself is a 96 bit string
+
+3. db.xx.find({name:/^x/}) and db.xx.find({name:/X*/})  ->RegEx
+
+4. db.xx.find({name:{$exist:false}})
+
+
+
+
+
