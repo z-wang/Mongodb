@@ -257,6 +257,19 @@ $and, $or
 4. db.xx.find({name:{$exist:false}})
 
 
+5. db update  $max
+db.xx.update({},{$inc:{age:1}},{multi:true})
+this will update all records, even without age, become += 1!!!
+
+**upsert/$setOnInsert
+if exist then update else insert
+
+6. when insert record if there are duplicated keys, the later one will stay!!
+
+7 !! ObjectId, NumberLog ...etc. different types
+
+8. 
+
 
 
 
