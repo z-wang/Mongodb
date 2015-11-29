@@ -233,10 +233,16 @@ for(i=0;i<10000;i++){
 db.account.insert({userName:"bbs"+i,age:i%60,createTime:newDate()});}
 
 #single key index:
-db.account.ensureIndex({"userName":1})
+db.account.ensureIndex({"userName":1})  -->Btree cursor
 #multi key index:
 15'
 
+---------------------
+#getIndex
+db.students.getIndexes()
+
+!!db.students.find().explain()
+db.students.find({name:"Mike"}).explain("executionStats")
 
 
 
