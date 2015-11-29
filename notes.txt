@@ -278,7 +278,16 @@ if exist then update else insert
 
 9. data model in mongodb website
 
-10.
+10. use index to ensure unique on one field, unique and not null
+db.students.ensureIndex({name:1},{unique:1})
+
+11. Model Tree Structure
+interesting topic
+Ancestor array
+path string/materilized array 
+**visit mongodb website
+
+12. 
 
 
 
