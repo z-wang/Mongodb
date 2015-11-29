@@ -268,7 +268,11 @@ if exist then update else insert
 
 7 !! ObjectId, NumberLog ...etc. different types
 
-8. 
+8. $in, find all records in a array
+
+9. data model in mongodb website
+
+10.
 
 
 
