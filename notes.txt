@@ -287,7 +287,19 @@ Ancestor array
 path string/materilized array 
 **visit mongodb website
 
-12. 
+12. show up or hide some fields in find results
+db.xx.find({},{"_id":0, name:1, age:1})  # only want name and age
+
+13. pagenation
+db.xx.find({},{"_id":0, name:1, age:1}).limit(3).skip(4) #jump 4 records
+
+14. sorting
+db.xx.find({},{"_id":0, name:1, age:1}).limit(3).skip(4).sort({age:1}) # age asc -> -1 for dsc , will use index if there is a index on the key cursor name_1_age_1
+
+15. 
+
+
+
 
 
 
