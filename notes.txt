@@ -296,7 +296,19 @@ db.xx.find({},{"_id":0, name:1, age:1}).limit(3).skip(4) #jump 4 records
 14. sorting
 db.xx.find({},{"_id":0, name:1, age:1}).limit(3).skip(4).sort({age:1}) # age asc -> -1 for dsc , will use index if there is a index on the key cursor name_1_age_1
 
-15. 
+15. db.student.find({courses: {$elementMatch: {name: "xx", age:$gte:30}}})
+$all:[]  -> must every element in the array
+
+16.  array element update:
+$addToSet
+$push
+$pull
+$pushAll is not as good as $push + $each
+$push + $each + $sort + $position
+
+
+
+
 
 
 
