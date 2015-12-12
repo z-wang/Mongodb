@@ -306,6 +306,21 @@ $pull
 $pushAll is not as good as $push + $each
 $push + $each + $sort + $position
 
+17. cursor
+.next
+.hasnext
+.objectsLeftInBatch
+.limit()
+.toArray()[3]
+.forEach()
+.hint()
+
+18.ObjectId
+create an auto incrementing sequence field
+db.counters.insert()
+
+19. GEO 
+
 
 
 
