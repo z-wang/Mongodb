@@ -7,6 +7,15 @@ dbpath=../data/db
 fork=true
 rest = true
 
+#########################################
+# window start mongod as service
+# mongod --directoryperdb --dbpath C:\mongodb\data\db --logpath C:\mongodb\log\mongodb.log --logappend -rest --install
+# net start MongoDB
+# //start as a serbive for windows
+#########################################
+
+
+
 #start mongod
 ./mongod -f ../etc/mongo.conf --smallfiles --journal
 
